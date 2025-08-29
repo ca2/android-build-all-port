@@ -1,0 +1,20 @@
+[submodule "base"]
+	path = base
+	url = ../android-port-base
+	branch = main
+[submodule "common"]
+	path = common
+	url = ../common-port
+	branch = main
+[submodule "graphics"]
+	path = graphics
+	url = ../graphics-port
+	branch = main
+[submodule "imaging"]
+	path = imaging
+	url = ../imaging-port
+	branch = main
+[submodule "graphics3d"]
+	path = graphics3d
+	url = ../android-lowland-port-graphics3d
+	branch = main
