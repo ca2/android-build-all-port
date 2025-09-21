@@ -16,21 +16,20 @@ endif()
 
 
 if(${INCLUDE_FREETYPE} OR ${INCLUDE_FREEIMAGE} OR ${INCLUDE_IMAGING_FREEIMAGE})
-    add_subdirectory(imaging/png)
+    add_subdirectory(imaging/port_png)
 endif()
 
 
 if(${INCLUDE_FREEIMAGE} OR ${INCLUDE_IMAGING_FREEIMAGE})
 
-    add_subdirectory(imaging/jpeg)
-    add_subdirectory(imaging/jxr)
-    add_subdirectory(imaging/openexr)
-    add_subdirectory(imaging/openjpeg)
-    add_subdirectory(imaging/rawlite)
-    add_subdirectory(imaging/tiff4)
-    add_subdirectory(imaging/webp)
-    add_subdirectory(imaging/freeimage)
-
+    add_subdirectory(imaging/port_jpeg)
+    add_subdirectory(imaging/port_jxr)
+    add_subdirectory(imaging/port_openexr)
+    add_subdirectory(imaging/port_openjpeg)
+    add_subdirectory(imaging/port_rawlite)
+    add_subdirectory(imaging/port_tiff4)
+    add_subdirectory(imaging/port_webp)
+    add_subdirectory(imaging/port_freeimage)
 
 endif()
 
