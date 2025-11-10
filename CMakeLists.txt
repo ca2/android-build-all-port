@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(port)
 
 
-project(port)
+message(STATUS "Project port")
 
 
 add_subdirectory(base/archive)
@@ -66,7 +66,11 @@ endif()
 
 if(${INCLUDE_AUDIO})
 
+
+    message(STATUS "Include Audio")
+
     add_subdirectory(base/id3lib)
+    add_subdirectory(base/mpg123)
 
 endif()
 
