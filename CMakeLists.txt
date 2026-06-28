@@ -10,6 +10,9 @@ add_subdirectory(base/pcre)
 add_subdirectory(base/zlib)
 
 
+add_subdirectory(audio/fluidsynth)
+
+
 if(${WIN32} OR ${ANDROID})
     add_subdirectory(base/sqlite)
 endif()
@@ -18,6 +21,9 @@ endif()
 if(${INCLUDE_FREETYPE} OR ${INCLUDE_FREEIMAGE} OR ${INCLUDE_IMAGING_FREEIMAGE})
     add_subdirectory(imaging/port_png)
 endif()
+
+
+
 
 
 if(${INCLUDE_FREEIMAGE} OR ${INCLUDE_IMAGING_FREEIMAGE})
