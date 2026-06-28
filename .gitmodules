@@ -18,3 +18,7 @@
 	path = graphics3d
 	url = ../android-lowland-port-graphics3d
 	branch = main
+[submodule "audio"]
+	path = audio
+	url = ../port-audio
+	branch = main
