@@ -7,13 +7,15 @@ message(STATUS "Project port")
 
 add_subdirectory(base/archive)
 add_subdirectory(base/pcre)
-add_subdirectory(base/zlib)
 
+if(NOT (${LINUX} OR ${__BSD__} OR ${__ANDROID__}))
+add_subdirectory(base/zlib)
+endif()
 
 add_subdirectory(audio/fluidsynth)
 
 
-if(${WIN32} OR ${ANDROID})
+if(${WIN32} OR ${__ANDROID__})
     add_subdirectory(base/sqlite)
 endif()
 
